@@ -13,20 +13,16 @@ public class SimpleDotComGame {
 		dot.setLocationCells(locations);
 
 		boolean isAlive = true;
-		
-		Scanner ler = new Scanner(System.in);
-		
-				
+			
 		while (isAlive==true) {
-			System.out.printf("insira um número");
-			String guess = helper.getUserInput("Insira um número");
+			String guess = helper.getUserInput("Insira um número: ");
 			String result = dot.checkYourself(guess);
 			numOfGuesses++;
 			if(result.equals("kill")) {
 				isAlive=false;
 			}else {
 				isAlive=true;
-				System.out.println("Você usou " + numOfGuesses + "palpites");
+				System.out.println("Você usou " + numOfGuesses + " palpites");
 			}
 		}
 		

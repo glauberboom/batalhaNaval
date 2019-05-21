@@ -9,8 +9,8 @@ public class SimpleDotCom {
 		
 	}
 
-	public String checkYourself(int numOfGuesses) {
-		int guess = numOfGuesses;
+	public String checkYourself(String guess2) {
+		int guess = Integer.parseInt(guess2);
 		
 		String result = "miss";
 		
